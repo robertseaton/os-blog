@@ -1,0 +1,23 @@
+---
+layout: default
+title: OS Blog - Let's talk shop, let's talk operating systems.
+---
+
+<section id="post">
+  <article>
+    <header>
+      <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
+      <p><time datetime="{{ site.posts.first.date }}" pubdate="pubdate">{{ site.posts.first.date | date:"%B %d, %Y" }}</time></p>
+    </header>
+    {{ site.posts.first.content }}
+  </article>
+
+  <div id="related">
+    <h2> Recent Posts </h2>
+    {% for post in site.posts limit:5 %}
+	  {% if post.hidden != true %}
+      <li class="posts"><a href="{{ post.url }}">{{ post.title }}</a></li>
+	  {% endif %}
+    {% endfor %}
+  </div>
+</section>

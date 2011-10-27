@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section id="post">
+  <article>
+    <header>
+      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      <p><time datetime="{{ page.date | date_to_xmlschema }}" pubdate="pubdate">{{ page.date | date:"%B %d, %Y" }}</time></p>
+    </header>
+    {{ content }}
+  </article>
+<div class="buttons">
+  <script type="text/javascript">
+    reddit_url = {{ page.url }}
+    reddit_title = {{ page.title }}
+  </script>
+  <script type="text/javascript" src="http://www.reddit.com/static/button/button3.js"></script>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="robbseaton">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+</div>
+
+<p> Enjoyed this article? Subscribe to the RSS feed or email newsletter. </p>
+
+  <div id="related">
+	{% if !site.related_posts.nil? %}
+    <h2> Related Posts </h2>
+	{% endif %}
+    {% for post in site.related_posts limit:5 %}
+	  {% if post.hidden != true %}
+      <li class="posts"><a href="{{ post.url }}">{{ post.title }}</a></li>
+	  {% endif %}
+    {% endfor %}
+  </div>
+
+</section>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>rs.io</title>
+  <link href="http://rs.io"/>
+  <link type="application/atom+xml" rel="self" href="http://rs.io/atom.xml"/>
+  <updated>2011-10-27T15:46:52-05:00</updated>
+  <id>http://rs.io</id>
+  <author>
+    <name>Robert Seaton</name>
+    <email>possesed@gmail.com</email>
+  </author>
+
+  
+  <entry>
+    <id>http://rs.io/tear-it-all-down</id>
+    <link type="text/html" rel="alternate" href="http://rs.io/tear-it-all-down"/>
+    <title>Tear It All Down</title>
+    <updated>2011-10-27T00:00:00-05:00</updated>
+    <author>
+      <name>Robert Seaton</name>
+      <uri>http://rs.io</uri>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt='Gerald Sussman at Strange Loop' src='/img/sussman.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gerald Sussman, perhaps best known as the inventor of the Scheme programming language and co-author of &lt;em&gt;Structure and Interpretation of Computer Programs&lt;/em&gt;, just gave a thought-provoking talk at Strange Loop titled &amp;#8220;We Really Don&amp;#8217;t Know How To Compute!&amp;#8221; A recording of the talk is available &lt;a href='http://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The talk isn&amp;#8217;t specifically on operating systems, but rather computing as a whole and how our current models must be replaced. In the talk, Sussman tells us that he envisions a future where computing will look radically different than today and, further, even the majority of the state of the art, radical ideas presented at Strange Loop are obsolete.&lt;/p&gt;
+
+&lt;p&gt;Sussman is a brilliant computer scientist and electrical engineer, so when he tells us that the future of computing requires that we tear down and replace our current models, it behooves us to listen, and it presents us with an opportunity. We are, along with electrical engineers, the ones with the power to experiment with and create fundamentally new models of computation. Through the creation of new, experimental operating systems, we have the ability to influence the entire software stack.&lt;/p&gt;
+
+&lt;p&gt;It is true that the most fundamental changes to our computation models must come in the shape of new hardware. In many cases, especially when considering a topic as low level as operating system design, we are constrained by our current architecture. However, as software architects, we have an important advantage: modifying hardware is difficult. It&amp;#8217;s much easier to modify a program running on a machine than it is to modify the machine itself. The class of new models of computing that can be explored without modified hardware is absolutely &lt;em&gt;massive&lt;/em&gt; and, if that&amp;#8217;s not enough, programmable hardware is becoming cheaper by the day.&lt;/p&gt;
+
+&lt;p&gt;With the rise of personal computing, Moore&amp;#8217;s law has given us, the hobbyist, the power to experiment with and create new models of computation. We are the ones with the power to tear it all down, to create the future of computing.&lt;/p&gt;</content>
+  </entry>
+  
+ 
+</feed>

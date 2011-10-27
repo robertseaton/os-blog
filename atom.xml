@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>rs.io</title>
+  <link href="http://rs.io"/>
+  <link type="application/atom+xml" rel="self" href="http://rs.io/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://rs.io</id>
+  <author>
+    <name>Robert Seaton</name>
+    <email>possesed@gmail.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://rs.io{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://rs.io{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Robert Seaton</name>
+      <uri>http://rs.io</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
