@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>rs.io</title>
+  <title>OS Blog</title>
   <link href="http://rs.io"/>
   <link type="application/atom+xml" rel="self" href="http://rs.io/atom.xml"/>
-  <updated>2011-10-27T15:46:52-05:00</updated>
-  <id>http://rs.io</id>
+  <updated>2011-10-28T00:49:28-04:00</updated>
+  <id>http://os-blog.com</id>
   <author>
     <name>Robert Seaton</name>
-    <email>possesed@gmail.com</email>
+    <email>seatonr@dupage.edu</email>
   </author>
 
   
   <entry>
     <id>http://rs.io/tear-it-all-down</id>
-    <link type="text/html" rel="alternate" href="http://rs.io/tear-it-all-down"/>
+    <link type="text/html" rel="alternate" href="http://os-blog.com/tear-it-all-down"/>
     <title>Tear It All Down</title>
-    <updated>2011-10-27T00:00:00-05:00</updated>
+    <updated>2011-10-27T00:00:00-04:00</updated>
     <author>
       <name>Robert Seaton</name>
-      <uri>http://rs.io</uri>
+      <uri>http://os-blog.com</uri>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt='Gerald Sussman at Strange Loop' src='/img/sussman.jpg' /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src='http://os-blog.com/img/sussman.jpg' alt='Gerald Sussman at Strange Loop' /&gt;&lt;/p&gt;
 
 &lt;p&gt;Gerald Sussman, perhaps best known as the inventor of the Scheme programming language and co-author of &lt;em&gt;Structure and Interpretation of Computer Programs&lt;/em&gt;, just gave a thought-provoking talk at Strange Loop titled &amp;#8220;We Really Don&amp;#8217;t Know How To Compute!&amp;#8221; A recording of the talk is available &lt;a href='http://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute'&gt;here&lt;/a&gt;.&lt;/p&gt;
 
