@@ -6,7 +6,7 @@ reddit_community: technology
 
 If you're interested in operating systems (and you're on a blog about operating systems, so you really should be), you owe it to yourself to use one that's open source, and I'm not talking about Android. I'm talking about *free software*. I'm talking about Linux. I'm talking about FreeBSD, OpenBSD, DragonFly BSD, NetBSD, OpenSolaris, Plan 9 From Bell Labs -- there's [an entire page of them on Wikipedia](http://en.wikipedia.org/wiki/Category:Free_software_operating_systems)!
 
-Imagine if, instead of operating systems, we were talking about the human body, and we got to discussing our favorite bits of anatomy. Imagine that, when I'm talking about my love for kidneys, you said something like: "Kidneys? What are kidneys?" and then I say something like "Well, they're an organ that..." -- and then you cut me off with "An organ! You mean there's another one, besides the skin?"
+Imagine if, instead of operating systems, we were talking about the human body, and we got to discussing our favorite bits of anatomy. Imagine that, when I'm talking about my love for kidneys, you said something like: "Kidneys? What are kidneys?" and then I say something like "Well, they're an organ that..." -- then you cut me off with -- "An organ! You mean there's another one, besides the skin?"
 
 Being interested in operating systems and only using proprietary ones is just like being interested in the human body and only studying what you can see from the outside. There's an entire world hidden from you!
 
