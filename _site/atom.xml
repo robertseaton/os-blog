@@ -4,7 +4,7 @@
   <title>OS Blog</title>
   <link href="http://rs.io"/>
   <link type="application/atom+xml" rel="self" href="http://rs.io/atom.xml"/>
-  <updated>2011-10-31T14:46:29-05:00</updated>
+  <updated>2011-10-31T14:52:08-05:00</updated>
   <id>http://os-blog.com</id>
   <author>
     <name>Robert Seaton</name>
@@ -37,7 +37,7 @@
 
 &lt;p&gt;There are many different flavors of Linux, known as distributions, but for our virtual machine, we&amp;#8217;ll be installing the x86_64 version of Fedora. You&amp;#8217;ll need a copy of the install image, available &lt;a href='http://download.fedoraproject.org/pub/fedora/linux/releases/test/16-Beta/Fedora/x86_64/iso/Fedora-16-Beta-x86_64-DVD.iso'&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Neither OSX or Windows ship with the software necessary to construct a virtual machine, so you&amp;#8217;ll need to download that, too. Fortunately, VirtualBox is free to download. You can get it &lt;a href='http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-Win.exe'&gt;here for Windows users&lt;/a&gt; and &lt;a href='http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-OSX.dmg'&gt;here for OSX users&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Neither OSX nor Windows ship with the software necessary to construct a virtual machine, so you&amp;#8217;ll need to download that, too. Fortunately, VirtualBox is free to download. You can get it &lt;a href='http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-Win.exe'&gt;here for Windows users&lt;/a&gt; and &lt;a href='http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-OSX.dmg'&gt;here for OSX users&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Installing VirtualBox is a straightforward affair, just follow the onscreen instructions.&lt;/p&gt;
 

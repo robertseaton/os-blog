@@ -20,7 +20,7 @@ The answer is, gentle reader, there's still a way that you, too, can experience 
 
 There are many different flavors of Linux, known as distributions, but for our virtual machine, we'll be installing the x86_64 version of Fedora. You'll need a copy of the install image, available [here](http://download.fedoraproject.org/pub/fedora/linux/releases/test/16-Beta/Fedora/x86_64/iso/Fedora-16-Beta-x86_64-DVD.iso).
 
-Neither OSX or Windows ship with the software necessary to construct a virtual machine, so you'll need to download that, too. Fortunately, VirtualBox is free to download. You can get it [here for Windows users](http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-Win.exe) and [here for OSX users](http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-OSX.dmg).
+Neither OSX nor Windows ship with the software necessary to construct a virtual machine, so you'll need to download that, too. Fortunately, VirtualBox is free to download. You can get it [here for Windows users](http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-Win.exe) and [here for OSX users](http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-OSX.dmg).
 
 Installing VirtualBox is a straightforward affair, just follow the onscreen instructions.
 
