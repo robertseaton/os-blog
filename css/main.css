@@ -1,3 +1,5 @@
+@import "http://fonts.googleapis.com/css?family=Inconsolata"
+
 body {
     background-color: #fff;
     color: #222222;
@@ -21,8 +23,22 @@ body {
    padding: 10px;
 }
 
+
+h1 {
+   font-weight: normal;
+   font-size: 1.5em;
+   margin-bottom: 0;
+   line-height: 1.25;
+   white-space: nowrap;
+   color: #000;
+}
+
+h1 a {
+   color: #000 !important;
+}
+
 h2 {
-    font-weight: normal;
+   font-weight: normal;
     font-size: 1.5em;
     margin-bottom: 0;
     line-height: 1.25;
@@ -30,6 +46,25 @@ h2 {
 
 #related h2 {
    padding-bottom: 15px;
+}
+
+.buttons h2 {
+   padding-bottom: 15px;
+}
+
+pre {
+   border: 3px solid grey;
+   font-size: 16px;
+   padding: 10px;
+}
+
+code {
+   font-family: Inconsolata;
+   background-color: lightgrey;
+}
+
+pre code {
+   background-color: transparent;
 }
 
 #related li {
@@ -45,6 +80,7 @@ article {
     font-family: Georgia, serif;
     line-height: 1.6;
     margin-top: 3em;
+   text-align: justify;
 }
 
 article header { color: #888; }

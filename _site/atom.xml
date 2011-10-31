@@ -4,7 +4,7 @@
   <title>OS Blog</title>
   <link href="http://rs.io"/>
   <link type="application/atom+xml" rel="self" href="http://rs.io/atom.xml"/>
-  <updated>2011-10-28T00:49:28-04:00</updated>
+  <updated>2011-10-31T14:46:29-05:00</updated>
   <id>http://os-blog.com</id>
   <author>
     <name>Robert Seaton</name>
@@ -13,15 +13,209 @@
 
   
   <entry>
-    <id>http://rs.io/tear-it-all-down</id>
-    <link type="text/html" rel="alternate" href="http://os-blog.com/tear-it-all-down"/>
-    <title>Tear It All Down</title>
-    <updated>2011-10-27T00:00:00-04:00</updated>
+    <id>http://rs.io/installing-a-linux-virtual-machine</id>
+    <link type="text/html" rel="alternate" href="http://os-blog.com/installing-a-linux-virtual-machine"/>
+    <title>Installing a Linux Virtual Machine</title>
+    <updated>2011-10-31T00:00:00-05:00</updated>
     <author>
       <name>Robert Seaton</name>
       <uri>http://os-blog.com</uri>
     </author>
-    <content type="html">&lt;p&gt;&lt;img src='http://os-blog.com/img/sussman.jpg' alt='Gerald Sussman at Strange Loop' /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;If you&amp;#8217;re interested in operating systems (and you&amp;#8217;re on a blog about operating systems, so you really should be), you owe it to yourself to use one that&amp;#8217;s open source, and I&amp;#8217;m not talking about Android. I&amp;#8217;m talking about &lt;em&gt;free software&lt;/em&gt;. I&amp;#8217;m talking about Linux. I&amp;#8217;m talking about FreeBSD, OpenBSD, DragonFly BSD, NetBSD, OpenSolaris, Plan 9 From Bell Labs &amp;#8211; there&amp;#8217;s &lt;a href='http://en.wikipedia.org/wiki/Category:Free_software_operating_systems'&gt;an entire page of them on Wikipedia&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Imagine if, instead of operating systems, we were talking about the human body, and we got to discussing our favorite bits of anatomy. Imagine that, when I&amp;#8217;m talking about my love for kidneys, you said something like: &amp;#8220;Kidneys? What are kidneys?&amp;#8221; and then I say something like &amp;#8220;Well, they&amp;#8217;re an organ that&amp;#8230;&amp;#8221; &amp;#8211; and then you cut me off with &amp;#8220;An organ! You mean there&amp;#8217;s another one, besides the skin?&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Being interested in operating systems and only using proprietary ones is just like being interested in the human body and only studying what you can see from the outside. There&amp;#8217;s an entire world hidden from you!&lt;/p&gt;
+
+&lt;p&gt;If I were you, the first thing that I&amp;#8217;d do is backup any important files and then I&amp;#8217;d install Linux. Simple as that.&lt;/p&gt;
+
+&lt;p&gt;Of course, maybe you need Windows for work, or for whatever reason you can&amp;#8217;t afford to just wipe everything and install Linux. Does that mean you just don&amp;#8217;t get to experience the world that&amp;#8217;s beneath the skin?&lt;/p&gt;
+
+&lt;p&gt;The answer is, gentle reader, there&amp;#8217;s still a way that you, too, can experience free software. In fact, I&amp;#8217;ve written this entire article just for you. You can run Linux as a virtual machine, which is almost as good as running it natively.&lt;/p&gt;
+
+&lt;h3 id='what_youll_need'&gt;What You&amp;#8217;ll Need&lt;/h3&gt;
+
+&lt;p&gt;There are many different flavors of Linux, known as distributions, but for our virtual machine, we&amp;#8217;ll be installing the x86_64 version of Fedora. You&amp;#8217;ll need a copy of the install image, available &lt;a href='http://download.fedoraproject.org/pub/fedora/linux/releases/test/16-Beta/Fedora/x86_64/iso/Fedora-16-Beta-x86_64-DVD.iso'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Neither OSX or Windows ship with the software necessary to construct a virtual machine, so you&amp;#8217;ll need to download that, too. Fortunately, VirtualBox is free to download. You can get it &lt;a href='http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-Win.exe'&gt;here for Windows users&lt;/a&gt; and &lt;a href='http://download.virtualbox.org/virtualbox/4.1.4/VirtualBox-4.1.4-74291-OSX.dmg'&gt;here for OSX users&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Installing VirtualBox is a straightforward affair, just follow the onscreen instructions.&lt;/p&gt;
+
+&lt;h3 id='creating_our_virtual_machine'&gt;Creating Our Virtual Machine&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open VirtualBox and choose &amp;#8220;New.&amp;#8221; The virtual machine wizard will appear.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='virtual machine wizard virtualbox' src='http://os-blog.com/img/linux-vm-osx-1.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Enter a name for your virtual machine, such as &amp;#8220;OS Dev Machine.&amp;#8221; Under the &amp;#8220;Operating System&amp;#8221; drop down menu, choose &amp;#8220;Linux.&amp;#8221; For the &amp;#8220;Version&amp;#8221; drop down menu, choose &amp;#8220;Fedora (64 bit).&amp;#8221; Then, select &amp;#8220;Continue.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='naming your virtual machine virtualbox' src='http://os-blog.com/img/linux-vm-osx-2.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;How much memory you decide to dedicate to your virtual machine depends on your personal preference and on how much memory your host machine has. I reccommend you allocate at least 512 MB. You can always change this setting later. Once you&amp;#8217;ve decided, press &amp;#8220;Continue.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='deciding how much memory to give your virtual machine virtualbox' src='http://os-blog.com/img/linux-vm-osx-3.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;The default settings are sufficient, choose &amp;#8220;Continue.&amp;#8221;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;You should now be presented with the virtual disk creation wizard. Click &amp;#8220;Continue.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='virtual disk creation wizard virtualbox' src='http://os-blog.com/img/linux-vm-osx-4.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Make sure &amp;#8220;Dynamically allocated&amp;#8221; is selected and then &amp;#8220;Continue.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='virtual disk storage details virtualbox' src='http://os-blog.com/img/linux-vm-osx-5.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;The size of your virtual machine&amp;#8217;s hard disk depends on how much you intend to use your virtual machine and what for. If you intend to use the virtual machine just for OS development, you can get away with using a smaller virtual disk than if you want to try out everything that Linux has to off.&lt;/p&gt;
+
+&lt;p&gt;A 10 GB virtual disk offers a happy medium, but if you don&amp;#8217;t plan to use your newly created virtual machine very often or you&amp;#8217;re strapped for disk space, you can get away with a smaller virtual disk. If you intend to store video or music files on your virtual disk, plan accordingly.&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;#8217;ve chosen the right size for your virtual machine, click &amp;#8220;Continue.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='virtual disk file location and size virtualbox' src='http://os-blog.com/img/linux-vm-osx-6.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Verify that your settings are correct, then choose &amp;#8220;Create.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='summary virtualbox' src='http://os-blog.com/img/linux-vm-osx-7.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Make sure that your settings are correct and then click &amp;#8220;Create.&amp;#8221; You can always modify these later.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='summary virtualbox' src='http://os-blog.com/img/linux-vm-osx-8.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Go to &amp;#8220;Settings&amp;#8221; &amp;gt; &amp;#8220;System&amp;#8221; &amp;gt; &amp;#8220;Processor&amp;#8221; and increase your virtual machine&amp;#8217;s available processors to the number of CPUs in your host machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='processor settings virtualbox' src='http://os-blog.com/img/linux-vm-osx-9.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Now go to &amp;#8220;Display.&amp;#8221; Increase video memory to at least 32 MB if possible. Select &amp;#8220;Enable 3D Acceleration&amp;#8221; and &amp;#8220;Enable 2D Video Acceleration.&amp;#8221; If VirtualBox warns you with &amp;#8220;Non-optimal settings detected,&amp;#8221; just ignore it. Click &amp;#8220;Ok.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='display settings virtualbox' src='http://os-blog.com/img/linux-vm-osx-10.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Select &amp;#8220;Start.&amp;#8221; Read the message on how to leave keyboard-capture mode and then press &amp;#8220;Ok.&amp;#8221; The &amp;#8220;First Run Wizard&amp;#8221; should appear. Press &amp;#8220;Continue&amp;#8221; and then click the folder icon. Find the Fedora disk image that you downloaded, select it, and press &amp;#8220;Open.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='open fedora 16 disk image virtualbox' src='http://os-blog.com/img/linux-vm-osx-11.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Now, your virtual machine will start running. At the prompt, select &amp;#8220;Install or upgrade Fedora&amp;#8221; and press the enter key.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install prompt' src='http://os-blog.com/img/linux-vm-osx-12.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;If you want to test the integrity of the installation media, select &amp;#8220;OK&amp;#8221; and press enter. Otherwise, choose &amp;#8220;Skip.&amp;#8221;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;If you&amp;#8217;d prefer to use a language other than the default, English, select that language now. Press &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install select language prompt' src='http://os-blog.com/img/linux-vm-osx-13.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Select your keyboard layout and then click &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install select keyboard layout prompt' src='http://os-blog.com/img/linux-vm-osx-14.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Make sure &amp;#8220;Basic Storage Devices&amp;#8221; is selected and then choose &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Select &amp;#8220;Yes, discard any data.&amp;#8221; Note: this only applies to your &lt;em&gt;virtual&lt;/em&gt; hard disk, not your real one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install storage device warning' src='http://os-blog.com/img/linux-vm-osx-15.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Choose a name for your virtual machine and then click &amp;#8220;Next.&amp;#8221; I name all my machines after countries, so I will be calling mine &amp;#8220;Spain.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install name this computer' src='http://os-blog.com/img/linux-vm-osx-16.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Select your timezone or city and then select &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install select timezone' src='http://os-blog.com/img/linux-vm-osx-17.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Enter your desired root password twice. Press &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Select &amp;#8220;Use All Space.&amp;#8221; If you so desire, you can also check &amp;#8220;Encrypt system.&amp;#8221; Choose &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install partition' src='http://os-blog.com/img/linux-vm-osx-18.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Press &amp;#8220;Write All Changes To Disk.&amp;#8221;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Press &amp;#8220;Next.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora install choose software' src='http://os-blog.com/img/linux-vm-osx-19.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Fedora will now begin the installation process. This can take a while depending on the speed of your hard disk. Grab a cup of coffee and &lt;a href='http://feeds.feedburner.com/os-blog/H'&gt;subscribe to our RSS feed&lt;/a&gt; or &lt;a href='http://eepurl.com/gIQ-P'&gt;email newsletter&lt;/a&gt; while you wait.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora installation process' src='http://os-blog.com/img/linux-vm-osx-20.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Click &amp;#8220;Reboot.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora completed installation' src='http://os-blog.com/img/linux-vm-osx-21.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Once your machine is finished rebooting, Fedora will present you with a wizard that will guide you through creating a user, setting your system&amp;#8217;s time and, optionally, sending a hardware profile to Fedora. Once you make it through the wizard, you can start using your brand new virtual machine.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Congratulations! You just installed a Linux virtual machine. Welcome to the brave new world of open source software!&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='fedora default desktop' src='http://os-blog.com/img/linux-vm-osx-22.jpg' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://rs.io/tear-it-all-down</id>
+    <link type="text/html" rel="alternate" href="http://os-blog.com/tear-it-all-down"/>
+    <title>Tear It All Down</title>
+    <updated>2011-10-27T00:00:00-05:00</updated>
+    <author>
+      <name>Robert Seaton</name>
+      <uri>http://os-blog.com</uri>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt='Gerald Sussman at Strange Loop' src='http://os-blog.com/img/sussman.jpg' /&gt;&lt;/p&gt;
 
 &lt;p&gt;Gerald Sussman, perhaps best known as the inventor of the Scheme programming language and co-author of &lt;em&gt;Structure and Interpretation of Computer Programs&lt;/em&gt;, just gave a thought-provoking talk at Strange Loop titled &amp;#8220;We Really Don&amp;#8217;t Know How To Compute!&amp;#8221; A recording of the talk is available &lt;a href='http://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute'&gt;here&lt;/a&gt;.&lt;/p&gt;
 
