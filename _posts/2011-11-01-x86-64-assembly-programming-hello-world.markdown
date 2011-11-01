@@ -1,15 +1,14 @@
 ---
-title: "x86_64 Assembly Language Tutorial: Hello, World!"
+title: "Assembly Programming: Hello, World!"
 reddit_community: programming
 layout: post
-published: false
 ---
 
 ![Man standing at blackboard.](http://os-blog.com/img/blackboard.jpg)
 
-If you're going to build your own operating system (and you *are* going to, right?), you'll need to know some assembly language. Once you know assembly language, you might even choose to write your [entire OS in assembly](http://www.returninfinity.com/baremetal.html). Whatever you choose, this tutorial will gently introduce you to the x86_64 assembly language, while future installments in the "x86_64 Assembly Language Tutorial" series will cover progressively more advanced topics.
+If you're going to build your own operating system (and you *are* going to, right?), you'll need be familiar with assembly programming. Once you know an assembly language, you might even choose to write your [entire OS in assembly](http://www.returninfinity.com/baremetal.html). Whatever you choose, this tutorial will gently introduce you to the x86_64 assembly language, while future installments in the "Assembly Programming" series will cover progressively more advanced topics.
 
-To receive notifications when more of the "x86_64 Assembly Language Tutorial" series is published, you should subscribe to our [RSS feed](http://feeds.feedburner.com/os-blog/H) or [email newsletter](http://eepurl.com/gIQ-P).
+To receive notifications when more of the "Assembly Programming" series is published, you should subscribe to our [RSS feed](http://feeds.feedburner.com/os-blog/H) or [email newsletter](http://eepurl.com/gIQ-P).
 
 ### What You'll Need
 

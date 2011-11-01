@@ -1,0 +1,33 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>OS Blog</title>
+  <link href="http://os-blog.com"/>
+  <link type="application/atom+xml" rel="self" href="http://os-blog.com/fedora.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://os-blog.com</id>
+  <author>
+    <name>Robert Seaton</name>
+    <email>robb@os-blog.com</email>
+  </author>
+
+  {% for post in site.posts %}
+    {% if post.fedora == true %}
+    <entry>
+      <id>http://os-blog{{ post.id }}</id>
+      <link type="text/html" rel="alternate" href="http://os-blog.com{{ post.url }}"/>
+      <title>{{ post.title }}</title>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <author>
+        <name>Robert Seaton</name>
+        <uri>http://os-blog.com</uri>
+      </author>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endif %}
+  {% endfor %}
+ 
+</feed>

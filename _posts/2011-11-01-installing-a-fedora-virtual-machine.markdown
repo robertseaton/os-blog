@@ -1,7 +1,8 @@
 ---
-title: Installing a Linux Virtual Machine
+title: Installing a Fedora Virtual Machine
 layout: post
 reddit_community: technology
+fedora: true
 ---
 
 If you're interested in operating systems (and you're on a blog about operating systems, so you really should be), you owe it to yourself to use one that's open source, and I'm not talking about Android. I'm talking about *free software*. I'm talking about Linux. I'm talking about FreeBSD, OpenBSD, DragonFly BSD, NetBSD, OpenSolaris, Plan 9 From Bell Labs -- there's [an entire page of them on Wikipedia](http://en.wikipedia.org/wiki/Category:Free_software_operating_systems)!
@@ -126,6 +127,6 @@ Installing VirtualBox is a straightforward affair, just follow the onscreen inst
 
 27. Once your machine is finished rebooting, Fedora will present you with a wizard that will guide you through creating a user, setting your system's time and, optionally, sending a hardware profile to Fedora. Once you make it through the wizard, you can start using your brand new virtual machine.
 
-28. Congratulations! You just installed a Linux virtual machine. Welcome to the brave new world of open source software!
+28. Congratulations! You just installed a Fedora virtual machine. Welcome to the brave new world of open source software!
 
     ![fedora default desktop](http://os-blog.com/img/linux-vm-osx-22.jpg)
