@@ -236,6 +236,7 @@ ul#rss li a:active {
 
 #nav {
    float: right;
+   display: inline;
 }
 
 #sidebar h2 {
