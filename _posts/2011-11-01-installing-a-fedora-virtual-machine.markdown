@@ -35,7 +35,7 @@ Installing VirtualBox is a straightforward affair, just follow the onscreen inst
 
     ![naming your virtual machine virtualbox](http://os-blog.com/img/linux-vm-osx-2.jpg)
 
-3. How much memory you decide to dedicate to your virtual machine depends on your personal preference and on how much memory your host machine has. I reccommend you allocate at least 512 MB. You can always change this setting later. Once you've decided, press "Continue."
+3. How much memory you decide to dedicate to your virtual machine depends on your personal preference and on how much memory your host machine has. I recommend you allocate at least 512 MB. You can always change this setting later. Once you've decided, press "Continue."
 
     ![deciding how much memory to give your virtual machine virtualbox](http://os-blog.com/img/linux-vm-osx-3.jpg)
 

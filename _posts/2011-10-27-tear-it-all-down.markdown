@@ -3,8 +3,6 @@ title: Tear It All Down
 layout: post
 ---
 
-![Gerald Sussman at Strange Loop](http://os-blog.com/img/sussman.jpg)
-
 Gerald Sussman, perhaps best known as the inventor of the Scheme programming language and co-author of *Structure and Interpretation of Computer Programs*, just gave a thought-provoking talk at Strange Loop titled "We Really Don't Know How To Compute!" A recording of the talk is available [here](http://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute).
 
 The talk isn't specifically on operating systems, but rather computing as a whole and how our current models must be replaced. In the talk, Sussman tells us that he envisions a future where computing will look radically different than today and, further, even the majority of the state of the art, radical ideas presented at Strange Loop are obsolete.

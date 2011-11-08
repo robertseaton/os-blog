@@ -3,8 +3,6 @@ title: VMWare Mobile, Coming Soon to Pockets Everywhere
 layout: post
 ---
 
-![android phone](http://os-blog.com/img/phone.jpg)
-
 Earlier this week, VMWare showed off a new product: a hypervisor targeted at mobile devices. The software, backed by Verizon and Samsung, takes aim at business people around the world, allowing users to run one operating system for business and another for pleasure.
 
 If you're anything like me, you spend a fair amount of time trying out new software, including different operating systems. Back before virtualization technology became mainstream, I had a laptop that I used solely for testing out different OSes. Some weeks, I'd wipe the machine and replace the OS 3 or 4 times. 
