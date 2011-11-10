@@ -5,7 +5,7 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>OS Blog</title>
-  <link href="http://os-blog.com"/>
+  <link href="http://os-blog.com/"/>
   <link type="application/atom+xml" rel="self" href="http://os-blog.com/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://os-blog.com</id>
