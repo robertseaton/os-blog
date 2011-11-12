@@ -17,4 +17,4 @@ Here's my first attempt at defining an operating system philosophy. The first ru
 
 2. **An operating system ought to be simple.** Both an operating system's interfaces and implementation should be simple. However, simple interfaces are more important than a simple implementation.
 
-4. **An operating system ought to be flexible.** The components that comprise an operating system should be easily replaced and modified. (For some interesting research on building flexible operating system, check out [this paper](http://www.usenix.org/event/usenix09/tech/full_papers/lohmann/lohmann.pdf).)
+4. **An operating system ought to be flexible.** The components that comprise an operating system should be easily replaced and modified. (For some interesting research on building flexible operating systems, check out [this paper](http://www.usenix.org/event/usenix09/tech/full_papers/lohmann/lohmann.pdf).)
