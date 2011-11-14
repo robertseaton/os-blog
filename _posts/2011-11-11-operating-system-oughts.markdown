@@ -3,7 +3,7 @@ title: Operating System Oughts
 layout: post
 ---
 
-Reader mail! Nick Mudgen sent me an email, asking:
+Reader mail! [Nick Mudge](http://1000milerunningman.com/) sent me an email, asking:
 
 > If you were going to create a new operating system, how would it be?
 
