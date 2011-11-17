@@ -1,6 +1,6 @@
 .highlight { color: #839496; background-color: #002b36; }
 .highlight .err { color: #dc322f; background-color: #073642; }
-.highlight .cp { color: #586e75; font-weight: bold; }
+.highlight .cp { color: #586e75; }
 .highlight .cs { color: #586e75; font-weight: bold; font-style: italic; }
 .highlight .gd { color: #839496; background-color: #fdd; }
 .highlight .gd .x { background-color: #faa; }
