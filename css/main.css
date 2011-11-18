@@ -54,12 +54,12 @@ pre {
    border: 3px solid grey;
    font-size: 14px;
    padding: 10px;
-   line-height: 1;
+   line-height: 1.2;
    text-align: left;
 }
 
 code {
-   font-family: monospace;
+   font-family: Inconsolata, 'Droid Sans Mono', Monaco, Consolas, monospace;
    background-color: lightgrey;
 }
 
@@ -299,4 +299,8 @@ ul#rss li a:active {
 
 #footer p.part-2 {
     float:right;
+}
+
+#right {
+   text-align: right;
 }

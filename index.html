@@ -11,6 +11,9 @@ title: Let's talk shop, let's talk operating systems.
     </header>
     {{ site.posts.first.content }}
   </article>
+  <div id="right">
+  (<a href="http://os-blog.com{{ site.posts.first.url }}#disqus_thread" data-disqus-identifier="{{ site.posts.first.title }}">First article</a>)
+  </div>
 
   <div id="related">
     <h2> Recent Posts </h2>
@@ -23,3 +26,15 @@ title: Let's talk shop, let's talk operating systems.
     </ul>
   </div>
 </section>
+
+<script type="text/javascript">
+    var disqus_shortname = 'os-blog'; // required: replace example with your forum shortname
+
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
