@@ -4,7 +4,7 @@ title: First Week of Plan 9
 layout: post
 ---
 
-![Plan 9 From Bell Labs, acme text editor](/img/plan9.jpg)
+![Plan 9 From Bell Labs, acme text editor](http://os-blog.com/img/plan9.jpg)
 
 I wrote last week that [I'm going to use Plan 9 for one month](http://os-blog.com/one-month-of-plan-9/) to get real work done and that I'm going to blog about my experience. It's been a week, so it's time for my first progress report.
 
