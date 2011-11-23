@@ -12,7 +12,7 @@ To receive notifications when more of the "Assembly Programming" series is publi
 
 Before we can get started, you're going to need an x86_64 Linux machine with the program nasm installed. You should be able to find nasm in your distribution's repository. 
 
-If you don't already have a Linux machine, you can follow our [guide to installing Linux in a virtual machine](http://os-blog.com/installing-a-linux-virtual-machine).
+If you don't already have a Linux machine, you can follow our [guide to installing Linux in a virtual machine](http://os-blog.com/installing-a-fedora-virtual-machine).
 
 ### "Hello, World!"
 
