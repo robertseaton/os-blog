@@ -13,7 +13,7 @@ It turns out, [OpenBSD](http://www.openbsd.org/) implements `malloc` in a certai
 
 For an example of why a `malloc` implementation might operate in such a way that writing to free'd memory doesn't immediately result in a segfault, you can check out my [example malloc implementation](http://os-blog.com/basic-malloc-implementation/).
 
-OpenBSD operates differently. On OpenBSD, when a program requests more memory than the system's page size, it's allocated via a call to `mmap`. In this case, `mmap` is being used to map part of main memory into the program's address space. If the program requests less memory than the system's pagesize, it's allocated from buckets set up earlier in the program's execution. These buckets are also allocated via `mmap`.
+OpenBSD operates differently. On OpenBSD, when a program requests more memory than the system's page size, it's allocated via a call to `mmap`. In this case, `mmap` is being used to map part of main memory into the program's address space. If the program requests less memory than the system's page size, it's allocated from buckets set up earlier in the program's execution. These buckets are also allocated via `mmap`.
 
 Since calls to `mmap` on OpenBSD are randomized, this has some security benefit.
 
