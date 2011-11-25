@@ -4,7 +4,9 @@ layout: post
 ---
 
 ![OpenBSD Carved Pumpkin](http://os-blog.com/img/openbsd_pumpkin.jpg)
-
+<div id="credit">
+Photo credit: sleighboy
+</div>
 I was reading about different `malloc` implementations on [this Wikipedia article](http://en.wikipedia.org/wiki/Memory_management) when I stumbled upon an interesting tidbit regarding OpenBSD's memory management strategy.
 
 It turns out, [OpenBSD](http://www.openbsd.org/) implements `malloc` in a certain way so that programs that try to write to free'd memory will segfault (crash). The advantage of this is that it makes this entire class of bugs painfully obvious to the user. As far as I know, this property is unique to OpenBSD's memory allocator.

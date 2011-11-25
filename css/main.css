@@ -94,12 +94,6 @@ article.link header h2 a:visited {
     text-decoration: underline; 
 }
 
-article img {
-	border:2px solid #000;
-	padding:1px;
-	background:#FFF;
-}
-
 blockquote { 
     margin: 0 18px 18px 18px;
     color:#666;
@@ -303,4 +297,11 @@ ul#rss li a:active {
 
 #right {
    text-align: right;
+}
+
+#credit {
+   text-align: right;
+   font-size: 10px;
+   padding-bottom: 15px;
+   padding-top: -15px;
 }
