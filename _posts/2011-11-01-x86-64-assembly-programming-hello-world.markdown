@@ -197,7 +197,7 @@ So, the first part of our assembly program associates the variable `message` wit
 {% highlight c %}
 int main() 
 {
-	char* message = "Hello, World!"
+	char* message = "Hello, World!";
 	
 	write(1, message, 13);
 	exit(0);

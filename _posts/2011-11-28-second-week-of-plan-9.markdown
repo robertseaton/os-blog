@@ -54,7 +54,7 @@ Abaco works okay. It's not pretty, but it gets the job done. (Speaking of not pr
 
 Getting work done in Plan 9 requires a 3-button mouse. (Well, you can use shift+click as a poor man's third button, but a 3-button mouse is recommended.) Getting work done in Plan 9 requires using the mouse. Want to save a file in acme? Use the mouse. 
 
-This requires a bit of getting used to and it's a far cry from my comfortable Linux desktop where using the mouse usage is entirely optional.
+This requires a bit of getting used to and it's a far cry from my comfortable Linux desktop where mouse usage is entirely optional.
 
 I don't know how I feel about Plan 9's mouse fetish. Whatever the designer's were attempting, it works okay, but I don't feel like there's any obvious win over "traditional" mouse-centric UIs (Windows or OS X) or something more keyboard-driven (emacs). 
 
