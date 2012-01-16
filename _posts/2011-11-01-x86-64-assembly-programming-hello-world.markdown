@@ -97,7 +97,7 @@ Before we start digging into the source code of our "Hello, World!" program, it'
 
 2. **Decode**
 
-    Decode, determines what operation the CPU will perform. The instruction is broken into parts: the opcode, which indicates which operation to perform, and the remaining parts provide information required for that operation, either a constant value, a register, or a location in main memory.
+    Decode determines what operation the CPU will perform. The instruction is broken into parts: the opcode, which indicates which operation to perform, and the remaining parts provide information required for that operation, either a constant value, a register, or a location in main memory.
 
 3. **Execute**
 
@@ -105,7 +105,7 @@ Before we start digging into the source code of our "Hello, World!" program, it'
 
 4. **Writeback**
 
-    The final step, writeback, simply stoes the result of the execute step to some form of memory: a register or a memory address. Not all instructions produce an output, some manipulate the program counter. These instructions are called jumps, and they facilitate stuff like loops, conditional statements, and function calls.
+    The final step, writeback, simply stores the result of the execute step to some form of memory: a register or a memory address. Not all instructions produce an output, some manipulate the program counter. These instructions are called jumps, and they facilitate stuff like loops, conditional statements, and function calls.
 
 ### Understanding Registers
 
